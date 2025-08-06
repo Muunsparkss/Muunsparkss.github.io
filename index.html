@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehmet Sedat YILDIZ - Full-Stack Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #374151; /* Dark gray text */
+        }
+        .typing-text::after {
+            content: '|';
+            animation: blink-caret .75s infinite;
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: currentColor }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm py-4 px-6 md:px-10 sticky top-0 z-50 rounded-b-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600 rounded-md p-2 hover:bg-indigo-50 transition duration-300">Mehmet Sedat YILDIZ</a>
+            <div class="space-x-4">
+                <a href="#about" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 rounded-md p-2 hover:bg-indigo-50">About</a>
+                <a href="#skills" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 rounded-md p-2 hover:bg-indigo-50">Skills</a>
+                <a href="#experience" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 rounded-md p-2 hover:bg-indigo-50">Experience</a>
+                <a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 rounded-md p-2 hover:bg-indigo-50">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 md:px-10 py-12">
+        <!-- Hero Section -->
+        <section id="hero" class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-xl shadow-lg p-8 md:p-16 mb-12 flex flex-col items-center text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+                Hello, I'm Mehmet Sedat YILDIZ
+            </h1>
+            <p class="text-xl md:text-3xl font-light mb-8 typing-text" data-phrases='["A Software Engineer.", "A Backend Developer.", "A Full-Stack Developer","A Musician"]'></p>
+            <a href="#contact" class="bg-white text-indigo-700 hover:bg-indigo-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                Get in Touch
+            </a>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="bg-white rounded-xl shadow-lg p-8 md:p-10 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-indigo-500 pb-2">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                <div class="md:w-1/3 mb-6 md:mb-0">
+                    <img src="./img/pp.jpg" alt="Mehmet Sedat YILDIZ" class="rounded-full w-48 h-48 object-cover shadow-md mx-auto">
+                </div>
+                <div class="md:w-2/3 text-lg text-gray-700 leading-relaxed">
+                    <p class="mb-4">As a Computer Engineer with a Bachelor's degree from Istanbul Kültür University (2020-2024), I specialize in backend development and software engineering. I am currently pursuing a Master's in Computer Science at Bremen University (starting 2025), focusing on deepening my knowledge in advanced computing systems and algorithm design.</p>
+                    <p class="mb-4">I am passionate about leveraging my technical skills to solve complex problems and drive innovation in software development. My approach combines strong analytical abilities with practical implementation, always aiming for scalable and efficient solutions.</p>
+                    <p>My academic background and professional experiences have equipped me with a robust understanding of the software development lifecycle and a commitment to continuous learning.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="bg-white rounded-xl shadow-lg p-8 md:p-10 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-indigo-500 pb-2">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-lg">
+                <div>
+                    <h3 class="font-semibold text-indigo-600 mb-2">Programming Languages:</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li>Python</li>
+                        <li>Javascript</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>C#</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-indigo-600 mb-2">Frameworks & Technology:</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li>React</li>
+                        <li>React Native</li>
+                        <li>Next.JS</li>
+                        <li>Git CI/CD</li>
+                        <li>Docker</li>
+                        <li>MongoDB</li>
+                        <li>SQL</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-indigo-600 mb-2">Methodology:</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li>Agile (SCRUM)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="bg-white rounded-xl shadow-lg p-8 md:p-10 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-indigo-500 pb-2">Experience</h2>
+            <div class="space-y-8">
+                <!-- Experience Item 1 -->
+                <div class="border-l-4 border-indigo-500 pl-4">
+                    <h3 class="text-2xl font-semibold text-gray-800">Coder RLHF - Scale AI</h3>
+                    <p class="text-indigo-600 text-lg mb-2">2024-2025</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Developed and fine-tuned algorithms using Python, JavaScript, C, and C++ to enhance machine learning models and data annotation processes.</li>
+                    </ul>
+                </div>
+                <!-- Experience Item 2 -->
+                <div class="border-l-4 border-indigo-500 pl-4">
+                    <h3 class="text-2xl font-semibold text-gray-800">Backend Developer - MetaWorld Technology and Software</h3>
+                    <p class="text-indigo-600 text-lg mb-2">2023-2024</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Designed and implemented scalable backend architectures to support high-traffic applications.</li>
+                        <li>Developed RESTful APIs, ensuring seamless integration with frontend systems and third-party services.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white rounded-xl shadow-lg p-8 md:p-10">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-indigo-500 pb-2">Contact Me</h2>
+            <div class="text-lg text-gray-700 space-y-4">
+                <p><strong class="text-indigo-600">Email:</strong> <a href="mailto:mehmetsedatyildiz333@gmail.com" class="text-blue-600 hover:underline">mehmetsedatyildiz333@gmail.com</a></p>
+                <p><strong class="text-indigo-600">Location:</strong> Halle (Saale) / Germany</p>
+                <p>Feel free to reach out to me for collaborations, job opportunities, or just to say hello!</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6 mt-12 rounded-t-lg">
+        <p>&copy; 2025 Mehmet Sedat YILDIZ. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for typing effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const typingTextElement = document.querySelector('.typing-text');
+            const phrases = JSON.parse(typingTextElement.dataset.phrases);
+            let phraseIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            const typingSpeed = 100; // milliseconds per character
+            const deletingSpeed = 50; // milliseconds per character
+            const pauseBeforeDelete = 1500; // milliseconds
+            const pauseBeforeType = 500; // milliseconds
+
+            function type() {
+                const currentPhrase = phrases[phraseIndex];
+                if (isDeleting) {
+                    typingTextElement.textContent = currentPhrase.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    typingTextElement.textContent = currentPhrase.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+
+                let speed = isDeleting ? deletingSpeed : typingSpeed;
+
+                if (!isDeleting && charIndex === currentPhrase.length) {
+                    speed = pauseBeforeDelete;
+                    isDeleting = true;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    phraseIndex = (phraseIndex + 1) % phrases.length;
+                    speed = pauseBeforeType;
+                }
+
+                setTimeout(type, speed);
+            }
+
+            type();
+        });
+    </script>
+</body>
+</html>
